@@ -11,40 +11,56 @@
 <body>
     <div class="container-fluid">
         <!-- header -->
-        <header>
+        <header class="text-white">
             <!-- header top  -->
-            <div class="row" >
-                <div class="col-4">lorem</div>
-                <div class="col-2">lorem</div>
-                <div class="col-6">lorem</div>
+            <div class="row" id="headerTop">
+                <div class="col-4 d-flex align-items-center">lorem</div>
+                <div class="col-2 d-flex align-items-center"></div>
+                <div class="col-6 d-flex align-items-center justify-content-end">lorem</div>
             </div>
             <!-- main header  -->
-            <nav class="row">
-                <div class="col-3">lorem</div>
-                <div class="col-9 ">
-                    <div class="row">
-                        <div class="col-2">lorem</div>
-                        <div class="col-2">lorem</div>
-                        <div class="col-2">lorem</div>
-                        <div class="col-2">lorem</div>
-                        <div class="col-2">lorem</div>
-                        <div class="col-2">lorem</div>
+            <nav class="row" id="mainHeader">
+                <div class="col d-flex align-items-center ">lorem</div>
+                <div class="col-8 ">
+                    <div class="row h-100">
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">lorem</div>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- main body of site -->
         <main>
+            <div class="spacer-h80"></div>
             <!-- top section of site -->
-            <section class="container">
+            <section class="container-xxl" id="topSection">
                 <div class="row">
-                    <div class="col-md-5">lorem</div>
-                    <div class="col-md-7">lorem</div>
+                    <div class="col-md-5 my-5 text-white">
+                        <h1 class="text-center" >Minis DNN Theme</h1>
+                        <div class="spacer-h40"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi ab delectus sunt magni quasi tempora. Commodi eligendi praesentium molestias dolorem? Sequi molestias esse aut dolor optio suscipit possimus ad?</p>
+                        <div class="spacer-h40"></div>
+                        <p class="lead">Submit email to get a free trial version of the minis Theme.</p>
+                        <form action="#submit" class="w-75 mx-auto ">
+                            <div class="form-floating mt-4 rounded-pill " id="submitTop" >
+                                <input type="email" name="email" id="email" class="form-control " placeholder=" ">
+                                <label for="email" class="text-black-50">Enter your email address</label>
+                                <button type="submit" class="btn btn-success w-25">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-7 mb-5">
+                        <img src="images/saas2-banner-img1.png" alt="dnngo" class="w-100 ">
+                    </div>
                 </div>
             </section>
             <!-- second section -->
-            <section class="container">
-                <header>
+            <section class="container bg-white">
+                <header class="text-center">
                     <h2>lorem</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum quaerat corrupti blanditiis aspernatur alias, esse fugit, maxime unde quas iste soluta vero fuga reiciendis nisi officia tempora, praesentium quis!</p>
                 </header>

@@ -1,10 +1,49 @@
 body {
-  background-color: plum;
+  background-color: #6f3fec;
 }
 
 * {
   outline: 1px solid cornflowerblue;
   min-height: 50px;
+  transition: width 0.5s;
+}
+
+#headerTop {
+  height: 52px;
+}
+
+#mainHeader {
+  height: 100px;
+}
+
+.spacer-h40 {
+  width: 100%;
+  height: 40px;
+}
+
+.spacer-h80 {
+  width: 100%;
+  height: 80px;
+}
+
+#submitTop {
+  overflow: hidden;
+  height: 50px;
+  position: relative;
+}
+#submitTop input {
+  height: 50px;
+}
+#submitTop label {
+  width: 100%;
+  height: 50px;
+  line-height: 1;
+}
+#submitTop button {
+  border-radius: 25px 0 0 25px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
