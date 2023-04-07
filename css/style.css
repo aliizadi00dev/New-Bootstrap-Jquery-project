@@ -136,4 +136,31 @@ a:hover, a:focus {
   height: 104px;
 }
 
+#sectionFive {
+  position: relative;
+  text-shadow: 0 0 20px white;
+}
+#sectionFive::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: 80px;
+  right: -20%;
+  bottom: -50px;
+  z-index: -100;
+  background-image: url(../images/world_map_mosaic_2_generated.jpg), repeating-linear-gradient(to bottom right, #8e81d3, #28a1d2, #2257d8);
+  background-blend-mode: multiply;
+  filter: hue-rotate(-20deg), contrast(-100);
+  background-size: cover;
+  border-top-left-radius: 30% 10%;
+  border-top-right-radius: 70% 30%;
+  border-bottom-left-radius: 70% 30%;
+  border-bottom-right-radius: 50% 15%;
+}
+@media screen and (max-width: 768px) {
+  #sectionFive::before {
+    border-radius: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
