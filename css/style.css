@@ -1,10 +1,14 @@
 body {
+  height: 2800px;
   overflow-x: hidden;
 }
 
-* {
-  min-height: 50px;
-  transition: width 0.5s;
+.text-violet {
+  color: #523ee8;
+}
+
+.bg-violet {
+  background-color: #523ee8;
 }
 
 #headerTop {
@@ -37,7 +41,6 @@ a:hover, a:focus {
   top: 100%;
 }
 #mainHeader .sub-menu > li {
-  min-height: 40px;
   height: 40px;
 }
 
@@ -51,6 +54,10 @@ a:hover, a:focus {
   height: 80px;
 }
 
+#topSection {
+  line-height: 2;
+  letter-spacing: 1px;
+}
 #topSection::before {
   content: "";
   position: absolute;
@@ -63,6 +70,12 @@ a:hover, a:focus {
   background-color: #6f42ec;
   border-bottom-left-radius: 30% 15%;
   border-bottom-right-radius: 70%;
+}
+@media screen and (max-width: 768px) {
+  #topSection::before {
+    border-radius: 0;
+    bottom: -340px;
+  }
 }
 
 #submitTop {
@@ -79,6 +92,7 @@ a:hover, a:focus {
   line-height: 1;
 }
 #submitTop button {
+  height: 50px;
   border-radius: 25px 0 0 25px !important;
   position: absolute;
   right: 0;
@@ -94,6 +108,32 @@ a:hover, a:focus {
   line-height: 3;
   color: white;
   margin-bottom: 10px;
+}
+
+#sectionThird {
+  position: relative;
+}
+#sectionThird::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: 80px;
+  right: -20%;
+  bottom: -100px;
+  z-index: -100;
+  background-image: repeating-linear-gradient(to bottom right, #8372e2 20%, #5572e2 40%, #8372e2 60%);
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 15%;
+}
+@media screen and (max-width: 768px) {
+  #sectionThird::before {
+    border-radius: 0;
+  }
+}
+#sectionThird .iconbox {
+  height: 104px;
 }
 
 /*# sourceMappingURL=style.css.map */
